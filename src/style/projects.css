@@ -1,0 +1,69 @@
+.projects > h1 {
+    font-family: font-tile;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+
+.projects > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, 500px);
+    gap: 100px;
+    justify-content: center;
+}
+
+.projects > ul > li {
+    display: grid;
+    grid-template-rows: 5.5fr 4.5fr;
+
+    box-shadow: 3px 3px 6px rgb(112, 109, 109);
+}
+
+.project-photo {
+    background-color: green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 100px 20px ;
+}
+
+.project-photo span {
+    text-align: center;
+
+    line-height: 100%;
+
+    font-family: title-font;
+    font-weight: lighter;
+    font-size: 4rem;
+    color: white;
+}
+
+.project-details {
+    padding: 10px 25px 15px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-header h2 {
+    font-family: title-font;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.project-header ul {
+    display: flex;
+    gap: 15px;
+}
+
+.project-details span {
+    font-size: 1.1rem;
+    color: var(--content-text-color);
+}

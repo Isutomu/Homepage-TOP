@@ -1,0 +1,40 @@
+.contact {
+    background-color: var(--background-color);
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contact > div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    color: white;
+
+    font-size: 1.3rem;
+}
+
+.contact h2 {
+    font-family: title-font;
+    font-weight: lighter;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.contact .email,
+.contact .phone-number {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact .phone-number {
+    margin-bottom: -30px;
+}
+
+.contact ul {
+    display: flex;
+    gap: 30px;
+}

@@ -1,0 +1,62 @@
+.hero {
+    --photo-height: calc(1*646px);
+    --photo-width: calc(1*479px);
+
+    background: no-repeat url(../../images/photos/background-hero.svg);
+    background-size: 110% auto;
+
+    display: flex;
+}
+
+.hero > div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .photo {
+    min-width: var(--photo-width);
+    height: auto;
+}
+
+.hero .name {
+    position: absolute;
+    bottom: 0rem;
+
+    font-family: title-font;
+    font-weight: lighter;
+    font-size: 4rem;
+    color: white;
+}
+
+.hero .about-box {
+    height: calc((var(--photo-height)*0.9));
+
+    margin-top: calc((var(--photo-height)*0.05));
+    margin-bottom: calc((var(--photo-height)*0.05));
+    padding: 0px 50px 0px 30px;
+
+    box-shadow: 3px 3px 6px rgb(112, 109, 109);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    color: var(--content-text-color);
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+.hero .about-box h1 {
+    font-family: title-font;
+    font-weight: lighter;
+    font-size: 4rem;
+    color: black;
+}
+
+.hero .about-box ul {
+    align-self: end;
+
+    display: flex;
+    gap: 20px;
+}
