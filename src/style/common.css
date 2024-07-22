@@ -1,0 +1,28 @@
+@font-face {
+    font-family: title-font;
+    src: url('../../fonts/PlayfairDisplay-VariableFont_wght.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: content-font;
+    src: url('../../fonts/Roboto-Regular.ttf');
+}
+
+:root {
+    --content-text-color: rgb(116, 116, 116);
+    --background-color: rgb(20, 159, 190);
+
+    font-family: content-font;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
