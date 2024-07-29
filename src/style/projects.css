@@ -1,6 +1,10 @@
+.projects {
+    padding-bottom: 150px;
+}
+
 .projects > h1 {
     font-family: font-tile;
-    font-size: 3rem;
+    font-size: 64px;
     margin-bottom: 1rem;
     font-weight: lighter;
 }
@@ -37,7 +41,7 @@
 
     font-family: title-font;
     font-weight: lighter;
-    font-size: 4rem;
+    font-size: 58px;
     color: white;
 }
 
@@ -55,7 +59,7 @@
 .project-header h2 {
     font-family: title-font;
     font-weight: lighter;
-    font-size: 2rem;
+    font-size: 36px;
 }
 
 .project-header ul {
@@ -64,6 +68,12 @@
 }
 
 .project-details span {
-    font-size: 1.1rem;
+    font-size: 20px;
     color: var(--content-text-color);
+}
+
+@media (max-width: 700px) {
+    .projects > h1 {
+        text-align: center;
+    }
 }

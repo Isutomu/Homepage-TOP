@@ -1,0 +1,2 @@
+@font-face{font-family:title-font;src:url(bf46a6bcddc9999a295e.ttf) format("ttf")}@font-face{font-family:content-font;src:url(fc2b5060f7accec5cf74.ttf)}:root{--content-text-color: rgb(116, 116, 116);--background-color: rgb(20, 159, 190);min-width:500px;font-family:content-font}section{padding:50px 75px 100px}ul{list-style:none}li{display:inline-block}@media(max-width: 1200px){:root{font-size:1.55vw}section{padding:50px 50px 100px}}
+/*# sourceMappingURL=common.css.map*/

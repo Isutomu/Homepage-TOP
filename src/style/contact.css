@@ -1,28 +1,33 @@
 .contact {
+    padding-top: 100px;
+
     background-color: var(--background-color);
 
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 40px;
 
     --photo-laughing-height: calc(.8*667px);
-    --photo-laughing-width: calc(.8*1000px);
+    --photo-laughing-width: calc(1*1000px);
 }
 
 .contact > div {
+    flex: 0 1 none;
+
     display: flex;
     flex-direction: column;
     gap: 40px;
 
     color: white;
 
-    font-size: 1.3rem;
+    font-weight: lighter;
+    font-size: 1.4rem;
 }
 
 .contact h2 {
     font-family: title-font;
     font-weight: lighter;
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 3rem;
 }
 
@@ -43,7 +48,105 @@
     gap: 30px;
 }
 
-.contact .photo {
-    max-height: var(--photo-laughing-height);
+/* .contact .photo,
+.contact .photo img {
+    max-height: auto;
     max-width: var(--photo-laughing-width);
+} */
+
+.contact .photo {
+    flex: 0 1.5 none;
+    align-self: center;
+
+    min-width: 600px;
+    object-fit: scale-down;
+}
+
+@media (max-width: 1200px) {
+    .contact {
+        padding: 50px 50px 75px;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contact > div {
+        gap: 30px;
+
+        font-size: max(16px, 1.3rem);
+    }
+
+    .contact h2 {
+        font-size: max(38px, 3rem);
+    }
+
+    .contact .phone-number {
+        margin-bottom: -20px;
+    }
+
+    .contact .photo {
+        /* flex: 0 1 none; */
+    }
+
+    .contact .photo {
+        flex: 0 1 none;
+    }
+
+    .contact .photo,
+    .contact .photo img {
+        min-width: 203px;
+        object-fit: scale-down;
+
+        /* object-fit: none; */
+    }
+
+
+}
+
+@media (max-width: 700px) {
+    .contact {
+        flex-direction: column;
+        padding: 0px;
+
+        align-content: center;
+    }
+
+    .contact span {
+        font-size: 24px;
+    }
+
+    .contact > div {
+        padding: 30px 20px 0px;
+        
+        flex-grow: 1;
+    }
+
+    .contact .contact-description {
+        font-size: 30px;
+    }
+
+    .contact .email img,
+    .contact .phone-number img{
+        display: none;
+    }
+
+    .contact ul {
+        justify-content: center;
+    }
+
+    .contact h2 {
+        text-align: center;
+
+        line-height: normal;
+        font-size: 60px;
+    }
+
+    .contact .photo {
+        display: flex;
+        width: 100%;
+    }
+
+    .contact .photo img {
+        object-fit: fill;
+    }
 }
